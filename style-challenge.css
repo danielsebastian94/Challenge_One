@@ -1,0 +1,213 @@
+:root{
+    --color-blue:#0A3871;
+    --color-gray:#495057
+}
+
+
+/* HEADER*/
+
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(90deg,#9FD5D1, #ffffff) ;
+}
+
+textarea{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.logoAlura{
+    width: 30px;
+    margin: top;
+
+}
+
+.logoAbvertencia{
+    width: 20px;
+}
+
+
+/*MAIN*/
+
+.main{
+    width:80%;
+    margin: auto 40px auto auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    min-height:calc(100vh - 91px - 71px);
+    align-items:end ;
+
+
+}
+
+.izquierda{
+    font-size: 20px;
+    height:85%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingrese__texto{
+    width: 80%;
+    font-size: 32px;
+    color:var(--color-blue);
+    resize: none;
+    background: none;
+    border: none;
+    outline:none ;
+}
+
+.ingrese__texto::placeholder{
+    color: var(--color-blue); 
+}
+
+.izquierda_footer{
+    background-color:transparent;
+}
+
+.izquierda_abvertencia{
+    display: inline-block;
+    color: var(--color-gray);
+}
+
+.izquierda_button{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+
+}
+
+.boton_encriptar, .boton_desencriptar, .btn_copiar{
+    border: 1px solid var(--color-blue);
+    cursor: pointer;
+    max-width:320px;
+    min-width: 160px;
+    width: 40%;
+    height: 67px;
+    font-size: 16px;
+    border-radius:24px ;
+}
+
+.boton_encriptar{
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.boton_desencriptar{
+    background-color:rgb(230, 224, 224);
+    color:var(--color-blue);
+}
+
+
+.derecha{
+width: auto;
+font-size: 20px;
+background-color: white;
+height: calc(100% + 30);
+border-radius: 32;
+padding: 32px;
+box-sizing: border-box;
+display:flex;
+flex-direction: column;
+justify-content:center;
+gap: 32px;
+align-items: center;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.derecha.ajustar{
+    justify-content:space-between;
+}
+
+.imagen_robot{
+    width: 100%; 
+}
+.oculto{
+    display: none;
+}
+
+
+.mensaje_final{
+    background: none;
+    border:none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mensaje_final.ajustar{
+    text-align: left;
+    font-weight: 400;
+    height: 80%;
+}
+
+
+.derecha_info{
+    color: var(--color-gray);
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.btn_copiar{
+    width:100%;
+    display: none;
+    background-color:transparent;
+    color:var(--color-blue)
+}
+
+
+
+
+
+/*footer{
+    height: 50px;
+}*/
+
+@media screen and(max-width:800px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin:auto 40px;
+    }   
+}
+
+
+.izquierda_button{
+    justify-content:center;
+}
+
+.boton_encriptar, 
+.boton_desencriptar{
+    width:45%;
+} 
+
+.derecha{
+    display: flex;
+}
+
+
+.imagen_robot{
+    width: 100%;
+ 
+}
+
+
+@media screen and(max-width:500px) {
+
+    .main{
+        margin:auto 16px;
+    }
+    .boton_encriptar, 
+.boton_desencriptar{
+    max-width:100%;
+} 
+}
+
+
+

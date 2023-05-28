@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-challenge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logoAlura" src="imagenes/images.jpeg" alt="Logo Alura">
+
+    </header>
+
+
+
+
+    <main >
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="ingreseTexto" class="ingrese__texto" placeholder="Ingrese el Texto Aqui" id="" cols="30" rows="10"></textarea>
+                <div class="izquierda_footer">
+                    <img class="logoAbvertencia" src="imagenes/symbol-caution-s-blue-logo-sign.png" alt="simbolo de abvertencia">
+                    <p class="izquierda_abvertencia">Solo Letras Minusculas y Sin Acento</p>
+                    <div class="izquierda_button">
+                        <button id="botonEncriptar" class="boton_encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="boton_desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="derecha"  class="derecha ajustar">
+                <img id="munheco" class="imagen_robot" src="imagenes/robot.jpg" alt="imagen robot">
+                <div class="">
+                    <textarea id="mensajeFinal" class="mensaje_final ajustar"
+                    placeholder="Ningun mensaje fue encontrado"></textarea>
+                    <p id="derechaInfo" class="derecha_info">Ingresa el texto que desees Encriptar o Desencriptar</p>
+                </div>
+                <button id="botonCopiar" class="btn_copiar oculto">Copiar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
